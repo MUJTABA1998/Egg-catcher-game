@@ -1,0 +1,232 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgb(70, 2, 70);
+    font-family: sans-serif;
+}
+
+#container {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+#score_help {
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+}
+
+#branch {
+    position: absolute;
+    height: 2%;
+    width: 100%;
+    background-color: #994e07;
+    top: 28%;
+}
+
+.hen {
+    position: absolute;
+    height: 19%;
+    width: 12%;
+    top: 10%;
+    background: url('hen-right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#hen1 {
+    left: 20%;
+}
+
+#hen2 {
+    left: 40%;
+}
+
+#hen3 {
+    left: 60%;
+}
+
+.egg {
+    position: absolute;
+    top: 18%;
+    height: 5%;
+    width: 2%;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+#egg1 {
+    left: calc(20% + 8%/2 - 2%/2);
+}
+
+#egg2 {
+    left: calc(40% + 8%/2 - 2%/2);
+}
+
+#egg3 {
+    left: calc(60% + 8%/2 - 2%/2);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 5%;
+    width: 9%;
+    background: url('bullseye1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bullseye1 {
+    left: calc(20% + 8%/2 - 7%/2);
+}
+
+#bullseye2 {
+    left: calc(40% + 8%/2 - 7%/2);
+}
+
+#bullseye3 {
+    left: calc(60% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #310533;
+    bottom: 0;
+    z-index: 10;
+}
+
+#basket {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    bottom: 5px;
+    background: url('basket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#score_1 {
+    position: absolute;
+    color: #3f0257;
+    font-size: 30px;
+    top: 45%;
+    left: 35%;
+}
+
+#restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgb(61, 3, 61);
+    color: white;
+    top: 40%;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .hen{
+        width: 17%;
+        height: 14%;
+    }
+    #hen1 {
+        left: 15%;
+    }
+    
+    #hen2 {
+        left: 45%;
+    }
+    
+    #hen3 {
+        left: 70%;
+    }
+    #branch{
+        top: 23%;
+    }
+    #bullseye1 {
+        left: calc(17% + 7%/2 - 6%/2);
+    }
+    
+    #bullseye2 {
+        left: calc(35% + 7%/2 - 6%/2);
+    }
+    
+    #bullseye3 {
+        left: calc(55% + 7%/2 - 6%/2);
+    }
+    .egg{
+        width: 4%;
+        height: 5%;
+    }
+}
+
+@media (max-width: 700px){
+    .hen{
+        width: 33%;
+        height: 14%;
+    }
+    #hen1 {
+        left: 10%;
+    }
+    
+    #hen2 {
+        left: 50%;
+    }
+    
+    #hen3 {
+        display: none;
+    }
+    #branch{
+        top: 23%;
+    }
+    .bullseye{
+        width: 30%
+    }
+    #bullseye1 {
+        left: calc(17% + 7%/2 - 6%/2);
+    }
+    
+    #bullseye2 {
+        left: calc(50% + 7%/2 - 6%/2);
+    }
+    
+    #bullseye3 {
+        display: none;
+    }
+    .egg{
+        width: 4%;
+        height: 5%;
+    }
+    #egg1 {
+        left: calc(20% + 8%/2 - 2%/2);
+    }
+    
+    #egg2 {
+        left: calc(62% + 8%/2 - 2%/2);
+    }
+    #egg3 {
+        display: none;
+    }
+}
